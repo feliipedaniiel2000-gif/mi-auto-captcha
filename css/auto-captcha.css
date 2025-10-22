@@ -1,0 +1,138 @@
+/* ESTILOS PARA EL SISTEMA AUTO-CAPTCHA */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* SECCIÓN CAPTCHA */
+.seccion-captcha {
+    margin: 25px 0;
+    padding: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.captcha-container {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.captcha-container img {
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: white;
+    margin-bottom: 10px;
+}
+
+.captcha-container input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* BOTONES */
+.controles-captcha {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.boton {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s;
+}
+
+.boton-primario {
+    background: #007bff;
+    color: white;
+}
+
+.boton-primario:hover {
+    background: #0056b3;
+}
+
+.boton-secundario {
+    background: #6c757d;
+    color: white;
+}
+
+.boton-secundario:hover {
+    background: #545b62;
+}
+
+.boton-enviar {
+    background: #28a745;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.boton-enviar:hover {
+    background: #218838;
+}
+
+/* NOTIFICACIONES */
+.notificacion {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    z-index: 10000;
+    max-width: 300px;
+}
+
+.notificacion.exito { background: #28a745; }
+.notificacion.error { background: #dc3545; }
+.notificacion.procesando { background: #ffa500; }
+
+/* PANEL DE ESTADÍSTICAS */
+.panel-estadisticas {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.panel-estadisticas h4 {
+    margin-top: 0;
+    color: #333;
+}

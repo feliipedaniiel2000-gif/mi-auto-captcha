@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Sitio Web con Auto-Captcha</title>
+    <link rel="stylesheet" href="css/auto-captcha.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Contacto</h1>
+        
+        <form id="miFormulario">
+            <!-- Campos normales -->
+            <div class="campo">
+                <label>Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+            
+            <div class="campo">
+                <label>Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            
+            <!-- SECCIÓN CAPTCHA -->
+            <div class="seccion-captcha">
+                <h3>Verificación de Seguridad</h3>
+                
+                <!-- Aquí va tu captcha normal -->
+                <div class="captcha-container">
+                    <img id="imagenCaptcha" src="ruta/a/tu/captcha.jpg" alt="Captcha">
+                    <input type="text" id="inputCaptcha" placeholder="Escribe el texto de la imagen">
+                </div>
+                
+                <!-- Botón MÁGICO de Auto-Captcha -->
+                <div class="controles-captcha">
+                    <button type="button" id="botonAutoCaptcha" class="boton boton-primario">
+                        🔍 Resolver Captcha Automáticamente
+                    </button>
+                    <button type="button" id="botonRefrescar" class="boton boton-secundario">
+                        🔄 Actualizar Captcha
+                    </button>
+                </div>
+            </div>
+            
+            <button type="submit" class="boton boton-enviar">Enviar Formulario</button>
+        </form>
+        
+        <!-- Panel de información -->
+        <div id="panelEstadisticas" class="panel-estadisticas">
+            <h4>📊 Estado del Sistema</h4>
+            <div id="contenidoEstadisticas">Cargando...</div>
+        </div>
+    </div>
+
+    <!-- Cargar todos los scripts -->
+    <script src="https://js.2captcha.com/2captcha.js"></script>
+    <script src="js/config/config.js"></script>
+    <script src="js/utils/utilidades.js"></script>
+    <script src="js/core/resolvedor.js"></script>
+    <script src="js/core/colas.js"></script>
+    <script src="js/ui/interfaz.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
